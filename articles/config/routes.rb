@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  #get 'articles/index' w tutorialu kazali
+  resources :articles, :only => [:index, :new, :create]
+
   resources :users
 
   # The priority is based upon order of creation: first created -> highest priority.
